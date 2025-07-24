@@ -1,0 +1,6 @@
+@SanadService_HostAddress = http://localhost:5125
+
+GET {{SanadService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
