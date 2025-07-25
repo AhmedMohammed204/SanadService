@@ -16,11 +16,11 @@ namespace AI_Layer.AI_Models.Gemini
         {
             _Key = Key;
             _httpClient = new HttpClient();
-            _url = $"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={_Key}";
+            _url = $"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={_Key}";
 
         }
 
-        public double Temperature { get; set; } = 0.0;
+        public double Temperature { get; set; } = 0.2;
         public int MaxTokens { get; set; } = 8192;
 
         void IGenerativeAI.SetConfig(double temperature, int maxTokens)

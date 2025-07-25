@@ -11,7 +11,7 @@ namespace Core_Layer.Services.Interfaces
     public interface IQuizService
     {
         Task<string?> GenerateQuizByAsyncByAI(QuizInfoDTO quizInfoDTO);
-        Task<QuizDTOs.SendQuizAnswersDTO> GetSubjectQuiz(string subject);
+        Task<QuizDTOs.QuizQuestionDTO> GetSubjectQuiz(string subject);
 
     }
 }

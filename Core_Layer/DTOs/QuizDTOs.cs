@@ -8,11 +8,12 @@ namespace Core_Layer.DTOs
 {
     public class QuizDTOs
     {
-        public class SendQuizAnswersDTO
+        public class QuizQuestionDTO
         {
+            public int questionId { get; set; }
             public string questionText { get; set; }
             public List<string> answers { get; set; }
-            public int CorrectAnswerIndex { get; set; }
+            public int correctAnswerIndex { get; set; }
 
         }
 

@@ -32,7 +32,7 @@ namespace Core_Layer.Services.Concrete.Services
             return res.Substring(4);
         }
         
-        public async Task<QuizDTOs.SendQuizAnswersDTO> GetSubjectQuiz(string subject)
+        public async Task<QuizDTOs.QuizQuestionDTO> GetSubjectQuiz(string subject)
         {
             throw new NotImplementedException();
         }
